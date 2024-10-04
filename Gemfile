@@ -4,8 +4,10 @@ source "https://rubygems.org"
 gem "rails", "~> 7.2.1"
 gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors'
+gem 'active_storage_validations'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+gem 'jwt'
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
