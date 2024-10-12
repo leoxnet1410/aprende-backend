@@ -2,9 +2,9 @@ class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :update, :destroy]  # Corrección aquí
 
   def index
-  @categories = Category.all
-  render json: @categories.as_json(methods: [:image_url])
-end
+    @categories = Category.all
+    render json: @categories
+  end
 
 def show
   render json: @category.as_json(methods: [:image_url])

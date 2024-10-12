@@ -6,7 +6,7 @@ class CreatePublications < ActiveRecord::Migration[7.2]
       t.string :location
       t.text :description
       t.references :category, null: false, foreign_key: true
-      t.string :media
+      t.string :image
 
       t.timestamps
     end

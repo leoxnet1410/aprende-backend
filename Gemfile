@@ -5,6 +5,7 @@ gem "rails", "~> 7.2.1"
 gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors'
 gem 'active_storage_validations'
+gem 'mini_magick'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 gem 'jwt'
