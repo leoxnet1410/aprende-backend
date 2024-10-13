@@ -24,7 +24,7 @@ class PublicationsController < ApplicationController
   def create
     @publication = Publication.new(publication_params)
     if @publication.save
-      render json: @publication.as_json(methods: [:image_url]), status: :created
+      render json: @publication.as_json(methods: [:image_urls]), status: :created
     else
       render json: { errors: @publication.errors.full_messages }, status: :unprocessable_entity
     end
@@ -43,6 +43,9 @@ class PublicationsController < ApplicationController
   end
 
   def publication_params
+   
     params.require(:publication).permit(:name, :description, :price, :location, :category_id, :image)
   end
+  
+
 end
